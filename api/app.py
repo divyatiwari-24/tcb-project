@@ -5,7 +5,7 @@ from pydantic import BaseModel
 import joblib, pandas as pd, uvicorn
 from pathlib import Path
 
-MODEL_PATH = "api/model/co2_rf_model.joblib"
+MODEL_PATH = "model/co2_rf_model.joblib"
 model = joblib.load(MODEL_PATH)
 
 app = FastAPI(title="CO2 Emissions Predictor")
